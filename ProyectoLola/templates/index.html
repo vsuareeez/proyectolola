@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Bonita</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #3498db;
+      padding: 20px;
+      color: #fff;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #3498db;
+      padding: 10px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Página Bonita</h1>
+  </header>
+
+  <section>
+    <h1>Consultar en base de datos</h1>
+    <form action="" method="post">
+      {% csrf_token %}
+      <br><input text="text" name="name" >
+      <br>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+     <h3>Datos:</h3>
+     <h3>{{data}}</h3>
+  <footer>
+    <p>&copy; 2024 Mi Página Bonita</p>
+  </footer>
+</body>
+</html>
